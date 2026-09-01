@@ -1,0 +1,26 @@
+{
+  "_readme": "Written by the bot's main.py after each daily run and pushed to this repo. Delete this _readme key once the real writer is in place -- it's just documentation for now. free_signal / vip_signal_count should come from the SAME picks main.py already computes (high_confidence + speculative lists) -- the free one is whichever single pick you choose to expose publicly (e.g. the lowest-EV qualifying pick, so the strongest ones stay VIP-only), the rest count toward vip_signal_count. On a day with zero qualifying picks, set free_signal to null and vip_signal_count to 0 -- the page shows the honest 'no signal today' state instead of stale data.",
+
+  "generated_at": "2026-09-01T08:00:00Z",
+
+  "stats": {
+    "avg_ev": "+7.8% EV",
+    "win_rate": "54.2%"
+  },
+
+  "free_signal": {
+    "fixture": "Real Madrid vs Atalanta",
+    "league": "UEFA Champions League",
+    "kickoff": "Today, 21:00 CET",
+    "market": "Over 2.5 Total Goals",
+    "odds": "2.05",
+    "implied_prob": "48.78%",
+    "fair_odds": "1.74",
+    "model_prob": "57.47%",
+    "ev": "+9.4% EV",
+    "insight": "xG Variance anomaly detected in away transition metrics. Odds over-indexed recent squad rotation news.",
+    "stake_note": "1.0% Portfolio Allocation (1 Unit)"
+  },
+
+  "vip_signal_count": 4
+}
