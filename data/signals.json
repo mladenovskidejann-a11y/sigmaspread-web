@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T09:01:59.429676Z",
+  "generated_at": "2026-09-02T09:21:58.822048Z",
   "stats": {
     "avg_ev": "+38.6% EV",
     "win_rate": "Building track record"
@@ -14,7 +14,21 @@
     "fair_odds": "2.66",
     "model_prob": "37.54%",
     "ev": "+38.6% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. Celta Vigo face a more significant impact with striker Borja Iglesias out and Marcos Alonso suspended, weakening their attack and defense. Real Sociedad miss some rotation options but retain their core attacking players, giving them a relative advantage. Head-to-head history shows a +0.8% effect across 6 meetings.",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. Celta Vigo significantly weakened by Borja Iglesias' absence (their key striker) and Marcos Alonso's suspension, while Real Sociedad's absences appear limited to squad/rotation players with minimal first-team impact. Head-to-head history shows a +0.8% effect across 6 meetings.",
+    "stake_note": "2.0% Portfolio Allocation (1 Unit)",
+    "confidence_tier": "speculative"
+  },
+  "banker_signal": {
+    "fixture": "Real Sociedad vs Celta Vigo",
+    "league": "La Liga (ESP)",
+    "kickoff": "Thu 03 Sep, 19:00 UTC",
+    "market": "Away Win",
+    "odds": "3.69",
+    "implied_prob": "27.10%",
+    "fair_odds": "2.66",
+    "model_prob": "37.54%",
+    "ev": "+38.6% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. Celta Vigo significantly weakened by Borja Iglesias' absence (their key striker) and Marcos Alonso's suspension, while Real Sociedad's absences appear limited to squad/rotation players with minimal first-team impact. Head-to-head history shows a +0.8% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
