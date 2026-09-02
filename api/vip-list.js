@@ -6,11 +6,21 @@
 // to the SAME value here (Vercel env var) and in the sigmaspread-bots
 // GitHub repo secret of the same name.
 //
-// Nothing to clean up here for expired memberships -- Vercel KV's TTL
-// (set at verification time, see telegram-webhook.js) means an expired
-// vip:<user_id> key is already gone from KV by the time this scans for it.
+// Nothing to clean up here for expired memberships -- Redis's TTL (set at
+// verification time, see telegram-webhook.js) means an expired
+// vip:<user_id> key is already gone by the time this scans for it.
+//
+// Uses the same Upstash Redis database as telegram-webhook.js (Vercel
+// Storage -> Upstash for Redis -> connected to this project). Built
+// explicitly from KV_REST_API_URL / KV_REST_API_TOKEN -- see the longer
+// note in telegram-webhook.js for why (NOT Redis.fromEnv()).
 
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
+
+const kv = new Redis({
+  url: process.env.KV_REST_API_URL,
+  token: process.env.KV_REST_API_TOKEN,
+});
 
 export default async function handler(req, res) {
   if (req.headers['x-vip-secret'] !== process.env.VIP_LIST_SECRET) {
