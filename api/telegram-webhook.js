@@ -1,7 +1,14 @@
 // api/telegram-webhook.js
 //
 // Vercel serverless function -- receives Telegram webhook updates for the
-// SigmaSpread bot. Right now it only handles /start and /verify <wallet>.
+// SigmaSpread bot. Handles /start and /verify <wallet>.
+//
+// VIP access model: a private VIP Telegram GROUP (not per-user DMs) --
+// football_bot posts VIP picks there directly, same as the free channel.
+// This function's job is just membership: on a successful /verify, it
+// creates a single-use invite link into that group and DMs it to the user.
+// Removing people when their 7 days are up is api/vip-sweep.js's job (runs
+// daily via Vercel Cron -- see vercel.json).
 //
 // Required Vercel env vars (Project Settings -> Environment Variables):
 //   TELEGRAM_BOT_TOKEN      -- the SAME bot token football_bot/instagram_poster use
@@ -11,6 +18,10 @@
 //                              Telegram echoes it back on every request so
 //                              we can reject anything that didn't really
 //                              come from Telegram.
+//   TELEGRAM_VIP_CHAT_ID    -- the private VIP group's chat id (negative
+//                              number, e.g. -1001234567890). The bot MUST
+//                              be an admin of that group with "Invite Users
+//                              via Link" permission for this to work.
 //
 // Also requires an Upstash Redis database connected to this project:
 // Vercel dashboard -> this project -> Storage -> Create Database ->
@@ -32,14 +43,25 @@ const kv = new Redis({
 
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET;
-const VIP_TTL_SECONDS = 7 * 24 * 60 * 60; // 7 days
+const VIP_CHAT_ID = process.env.TELEGRAM_VIP_CHAT_ID;
+const VIP_DURATION_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
+// Safety-net TTL on the KV record itself -- well beyond the real 7-day
+// window, so a record still hangs around (with its real vip_until inside)
+// for api/vip-sweep.js to read and act on even if a sweep run gets missed
+// for a few days. Not the real expiry -- vip_until is.
+const RECORD_TTL_SECONDS = 30 * 24 * 60 * 60; // 30 days
 
-async function sendMessage(chatId, text) {
-  await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+async function telegramApi(method, params) {
+  const resp = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/${method}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: chatId, text, parse_mode: 'Markdown' }),
+    body: JSON.stringify(params),
   });
+  return resp.json();
+}
+
+async function sendMessage(chatId, text) {
+  await telegramApi('sendMessage', { chat_id: chatId, text, parse_mode: 'Markdown' });
 }
 
 function isValidWalletAddress(addr) {
@@ -55,6 +77,19 @@ async function hasPolymarketActivity(address) {
   if (!resp.ok) return false;
   const data = await resp.json();
   return Array.isArray(data) && data.length > 0;
+}
+
+// Single-use, short-lived invite link into the VIP group -- expires in 1
+// hour or after one join, whichever comes first, so it can't be shared
+// around or reused later once someone else has already claimed it.
+async function createVipInvite() {
+  const result = await telegramApi('createChatInviteLink', {
+    chat_id: VIP_CHAT_ID,
+    member_limit: 1,
+    expire_date: Math.floor(Date.now() / 1000) + 3600,
+    name: 'VIP verify auto-invite',
+  });
+  return result.ok ? result.result.invite_link : null;
 }
 
 export default async function handler(req, res) {
@@ -84,8 +119,8 @@ export default async function handler(req, res) {
       chatId,
       "Welcome to SigmaSpread!\n\n" +
         'Send `/verify <your Polymarket wallet address>` to unlock 7 days of ' +
-        'VIP access (every pick we find, not just the free one) -- you need real ' +
-        'trading activity on that wallet for it to count.'
+        'access to our private VIP group (every pick we find, not just the free ' +
+        'one) -- you need real trading activity on that wallet for it to count.'
     );
     return res.status(200).send('OK');
   }
@@ -103,10 +138,13 @@ export default async function handler(req, res) {
       return res.status(200).send('OK');
     }
 
-    const existingVip = await kv.get(`vip:${userId}`);
-    if (existingVip) {
-      await sendMessage(chatId, 'You already have active VIP access. No need to verify again yet.');
-      return res.status(200).send('OK');
+    const existingRaw = await kv.get(`vip:${userId}`);
+    if (existingRaw) {
+      const existing = typeof existingRaw === 'string' ? JSON.parse(existingRaw) : existingRaw;
+      if (existing.vip_until > Date.now()) {
+        await sendMessage(chatId, 'You already have active VIP access. No need to verify again yet.');
+        return res.status(200).send('OK');
+      }
     }
 
     // One wallet can only ever unlock VIP once -- for anyone, ever. Stops
@@ -131,17 +169,31 @@ export default async function handler(req, res) {
       return res.status(200).send('OK');
     }
 
-    await kv.set(`vip:${userId}`, wallet, { ex: VIP_TTL_SECONDS });
+    if (!VIP_CHAT_ID) {
+      await sendMessage(chatId, "Verification passed, but the VIP group isn't configured yet -- tell the admin.");
+      return res.status(200).send('OK');
+    }
+
+    const inviteLink = await createVipInvite();
+    if (!inviteLink) {
+      await sendMessage(
+        chatId,
+        "Verification passed, but we couldn't generate a VIP invite link right now -- " +
+          "make sure the bot is an admin of the VIP group with 'Invite Users via Link' permission, then try /verify again."
+      );
+      return res.status(200).send('OK');
+    }
+
+    const vipUntil = Date.now() + VIP_DURATION_MS;
+    await kv.set(`vip:${userId}`, JSON.stringify({ wallet, vip_until: vipUntil }), { ex: RECORD_TTL_SECONDS });
     await kv.set(`wallet_used:${wallet}`, userId); // no expiry -- permanent, prevents reuse forever
 
-    const expiryDate = new Date(Date.now() + VIP_TTL_SECONDS * 1000)
-      .toISOString()
-      .slice(0, 16)
-      .replace('T', ' ');
+    const expiryDate = new Date(vipUntil).toISOString().slice(0, 16).replace('T', ' ');
     await sendMessage(
       chatId,
-      `✅ Verified! You now have VIP access until *${expiryDate} UTC*.\n\n` +
-        "You'll get every pick we find each day, not just the one free pick. Enjoy!"
+      `✅ Verified! Here's your one-time invite to the VIP group:\n${inviteLink}\n\n` +
+        `Your access lasts until *${expiryDate} UTC* -- after that you'll be removed automatically ` +
+        "unless you verify a new trade with /verify again."
     );
     return res.status(200).send('OK');
   }
