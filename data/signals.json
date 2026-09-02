@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T09:21:58.822048Z",
+  "generated_at": "2026-09-02T10:36:10.320866Z",
   "stats": {
-    "avg_ev": "+38.6% EV",
+    "avg_ev": "+40.5% EV",
     "win_rate": "Building track record"
   },
   "free_signal": {
@@ -11,10 +11,10 @@
     "market": "Away Win",
     "odds": "3.69",
     "implied_prob": "27.10%",
-    "fair_odds": "2.66",
-    "model_prob": "37.54%",
-    "ev": "+38.6% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. Celta Vigo significantly weakened by Borja Iglesias' absence (their key striker) and Marcos Alonso's suspension, while Real Sociedad's absences appear limited to squad/rotation players with minimal first-team impact. Head-to-head history shows a +0.8% effect across 6 meetings.",
+    "fair_odds": "2.63",
+    "model_prob": "38.05%",
+    "ev": "+40.5% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +0.8% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
@@ -25,10 +25,10 @@
     "market": "Away Win",
     "odds": "3.69",
     "implied_prob": "27.10%",
-    "fair_odds": "2.66",
-    "model_prob": "37.54%",
-    "ev": "+38.6% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. Celta Vigo significantly weakened by Borja Iglesias' absence (their key striker) and Marcos Alonso's suspension, while Real Sociedad's absences appear limited to squad/rotation players with minimal first-team impact. Head-to-head history shows a +0.8% effect across 6 meetings.",
+    "fair_odds": "2.63",
+    "model_prob": "38.05%",
+    "ev": "+40.5% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +0.8% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
