@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T08:37:47.309982Z",
+  "generated_at": "2026-09-02T09:01:59.429676Z",
   "stats": {
     "avg_ev": "+38.6% EV",
     "win_rate": "Building track record"
@@ -14,9 +14,9 @@
     "fair_odds": "2.66",
     "model_prob": "37.54%",
     "ev": "+38.6% EV",
-    "insight": "Celta Vigo face more significant absences with key striker Borja Iglesias out injured and defender Marcos Alonso suspended, while Real Sociedad miss some rotation options but retain core attacking players. This moderately favors the home side. Head-to-head history shows a +0.8% effect across 6 meetings.",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. Celta Vigo face a more significant impact with striker Borja Iglesias out and Marcos Alonso suspended, weakening their attack and defense. Real Sociedad miss some rotation options but retain their core attacking players, giving them a relative advantage. Head-to-head history shows a +0.8% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "high_confidence"
+    "confidence_tier": "speculative"
   },
   "vip_signal_count": 0
 }
