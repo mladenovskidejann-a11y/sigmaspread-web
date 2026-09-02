@@ -12,14 +12,23 @@
 //                              we can reject anything that didn't really
 //                              come from Telegram.
 //
-// Also requires Vercel KV connected to this project: Vercel dashboard ->
-// this project -> Storage tab -> Create Database -> KV. That auto-injects
-// KV_REST_API_URL / KV_REST_API_TOKEN, which @vercel/kv picks up on its own
-// -- no extra config needed here.
+// Also requires an Upstash Redis database connected to this project:
+// Vercel dashboard -> this project -> Storage -> Create Database ->
+// Upstash for Redis -> Connect to Project. That auto-injects
+// KV_REST_API_URL / KV_REST_API_TOKEN (Vercel kept the old "KV_" names for
+// backwards compatibility even though the underlying store is now Upstash
+// Redis) -- built explicitly below rather than via Redis.fromEnv(), which
+// looks for differently-named UPSTASH_REDIS_REST_* vars that this
+// integration does NOT set.
 //
-// package.json needs "@vercel/kv" as a dependency (npm install @vercel/kv).
+// package.json needs "@upstash/redis" as a dependency (npm install @upstash/redis).
 
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
+
+const kv = new Redis({
+  url: process.env.KV_REST_API_URL,
+  token: process.env.KV_REST_API_TOKEN,
+});
 
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET;
