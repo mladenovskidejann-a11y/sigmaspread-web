@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-04T06:30:05.297961Z",
+  "generated_at": "2026-09-04T07:20:37.510367Z",
   "stats": {
-    "avg_ev": "+35.4% EV",
+    "avg_ev": "+35.0% EV",
     "win_rate": "Building track record"
   },
   "free_signal": {
@@ -27,7 +27,7 @@
     "implied_prob": "59.88%",
     "fair_odds": "1.33",
     "model_prob": "74.96%",
-    "ev": "+25.5% EV",
+    "ev": "+25.2% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +1.7% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
