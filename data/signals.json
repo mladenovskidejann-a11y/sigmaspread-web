@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-04T07:41:19.984616Z",
+  "generated_at": "2026-09-04T11:12:15.899352Z",
   "stats": {
-    "avg_ev": "+31.6% EV",
+    "avg_ev": "+30.8% EV",
     "win_rate": "Building track record"
   },
   "free_signal": {
@@ -23,11 +23,11 @@
     "league": "Ligue 1 (FRA)",
     "kickoff": "Today, 17:00 UTC",
     "market": "Over 2.5 Total Goals",
-    "odds": "1.67",
-    "implied_prob": "59.88%",
+    "odds": "1.65",
+    "implied_prob": "60.61%",
     "fair_odds": "1.33",
     "model_prob": "74.96%",
-    "ev": "+25.2% EV",
+    "ev": "+24.0% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +1.7% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
