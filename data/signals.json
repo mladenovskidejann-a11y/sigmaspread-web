@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-06T07:11:26.094682Z",
+  "generated_at": "2026-09-06T10:51:14.584273Z",
   "stats": {
-    "avg_ev": "+38.2% EV",
+    "avg_ev": "+38.1% EV",
     "win_rate": "28.6%"
   },
   "free_signal": {
-    "fixture": "ADO Den Haag vs Fortuna Sittard",
-    "league": "Eredivisie (NED)",
-    "kickoff": "Today, 14:45 UTC",
-    "market": "Away Win",
-    "odds": "3.09",
-    "implied_prob": "32.36%",
-    "fair_odds": "1.95",
-    "model_prob": "51.25%",
-    "ev": "+58.1% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a -4.0% effect across 5 meetings.",
+    "fixture": "Everton vs Manchester United",
+    "league": "Premier League (ENG)",
+    "kickoff": "Today, 13:00 UTC",
+    "market": "Home Win",
+    "odds": "3.68",
+    "implied_prob": "27.17%",
+    "fair_odds": "2.59",
+    "model_prob": "38.67%",
+    "ev": "+42.4% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a -1.7% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
@@ -27,7 +27,7 @@
     "implied_prob": "55.56%",
     "fair_odds": "1.32",
     "model_prob": "75.94%",
-    "ev": "+36.5% EV",
+    "ev": "+36.7% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +3.3% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
