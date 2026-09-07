@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T07:10:54.730218Z",
+  "generated_at": "2026-09-07T12:22:17.531896Z",
   "stats": {
-    "avg_ev": "+39.3% EV",
+    "avg_ev": "+39.8% EV",
     "win_rate": "37.0%"
   },
   "free_signal": {
@@ -9,26 +9,26 @@
     "league": "Serie A (ITA)",
     "kickoff": "Today, 16:30 UTC",
     "market": "Away Win",
-    "odds": "4.15",
-    "implied_prob": "24.10%",
+    "odds": "4.04",
+    "implied_prob": "24.75%",
     "fair_odds": "2.69",
     "model_prob": "37.14%",
-    "ev": "+54.0% EV",
+    "ev": "+50.0% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
   "banker_signal": {
-    "fixture": "Struga vs Sileks",
+    "fixture": "Vardar Skopje vs Aresimi",
     "league": "Prva Liga (MKD)",
-    "kickoff": "Today, 14:00 UTC",
-    "market": "Home Win",
-    "odds": "2.05",
-    "implied_prob": "48.78%",
+    "kickoff": "Today, 17:00 UTC",
+    "market": "Both Teams To Score - Yes",
+    "odds": "2.01",
+    "implied_prob": "49.75%",
     "fair_odds": "1.43",
-    "model_prob": "69.98%",
-    "ev": "+43.6% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a -0.8% effect across 6 meetings.",
+    "model_prob": "69.88%",
+    "ev": "+40.6% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.0% effect across 5 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
