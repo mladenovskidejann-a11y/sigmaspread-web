@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T12:11:18.982718Z",
+  "generated_at": "2026-09-08T12:19:11.057343Z",
   "stats": {
     "avg_ev": "+42.3% EV",
     "win_rate": "40.0%"
@@ -9,11 +9,11 @@
     "league": "UEFA Champions League",
     "kickoff": "Today, 16:45 UTC",
     "market": "Home Win",
-    "odds": "2.54",
-    "implied_prob": "39.37%",
+    "odds": "2.52",
+    "implied_prob": "39.68%",
     "fair_odds": "1.79",
     "model_prob": "55.96%",
-    "ev": "+42.2% EV",
+    "ev": "+41.0% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
@@ -23,11 +23,11 @@
     "league": "UEFA Champions League",
     "kickoff": "Today, 16:45 UTC",
     "market": "Home Win",
-    "odds": "2.54",
-    "implied_prob": "39.37%",
+    "odds": "2.52",
+    "implied_prob": "39.68%",
     "fair_odds": "1.79",
     "model_prob": "55.96%",
-    "ev": "+42.2% EV",
+    "ev": "+41.0% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
