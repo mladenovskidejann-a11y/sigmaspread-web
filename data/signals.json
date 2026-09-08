@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-08T11:49:46.169644Z",
+  "generated_at": "2026-09-08T12:11:18.982718Z",
   "stats": {
-    "avg_ev": "+43.6% EV",
+    "avg_ev": "+42.3% EV",
     "win_rate": "40.0%"
   },
   "free_signal": {
-    "fixture": "Utrecht vs GO Ahead Eagles",
-    "league": "Eredivisie (NED)",
-    "kickoff": "Today, 12:00 UTC",
-    "market": "Away Win",
-    "odds": "3.09",
-    "implied_prob": "32.36%",
-    "fair_odds": "1.94",
-    "model_prob": "51.54%",
-    "ev": "+59.0% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +0.8% effect across 6 meetings.",
+    "fixture": "Club Brugge KV vs Aston Villa",
+    "league": "UEFA Champions League",
+    "kickoff": "Today, 16:45 UTC",
+    "market": "Home Win",
+    "odds": "2.54",
+    "implied_prob": "39.37%",
+    "fair_odds": "1.79",
+    "model_prob": "55.96%",
+    "ev": "+42.2% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
