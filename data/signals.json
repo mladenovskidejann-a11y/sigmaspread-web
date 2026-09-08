@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T07:11:38.047588Z",
+  "generated_at": "2026-09-08T11:34:22.563761Z",
   "stats": {
     "avg_ev": "+43.6% EV",
     "win_rate": "40.0%"
@@ -23,11 +23,11 @@
     "league": "UEFA Champions League",
     "kickoff": "Today, 16:45 UTC",
     "market": "Home Win",
-    "odds": "2.55",
-    "implied_prob": "39.22%",
+    "odds": "2.54",
+    "implied_prob": "39.37%",
     "fair_odds": "1.79",
     "model_prob": "55.96%",
-    "ev": "+42.7% EV",
+    "ev": "+42.2% EV",
     "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
