@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-12T07:02:28.895309Z",
+  "generated_at": "2026-09-13T07:02:19.231561Z",
   "stats": {
-    "avg_ev": "+41.6% EV",
-    "win_rate": "23.1%"
+    "avg_ev": "+41.2% EV",
+    "win_rate": "27.6%"
   },
   "free_signal": {
-    "fixture": "Crystal Palace vs Ipswich",
-    "league": "Premier League (ENG)",
-    "kickoff": "Today, 14:00 UTC",
+    "fixture": "Sileks vs Bregalnica \u0160tip",
+    "league": "Prva Liga (MKD)",
+    "kickoff": "Today, 13:45 UTC",
     "market": "Over 2.5 Total Goals",
-    "odds": "1.80",
-    "implied_prob": "55.56%",
-    "fair_odds": "1.20",
-    "model_prob": "83.43%",
-    "ev": "+49.9% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +3.3% effect across 6 meetings.",
+    "odds": "1.67",
+    "implied_prob": "59.88%",
+    "fair_odds": "1.42",
+    "model_prob": "70.35%",
+    "ev": "+17.1% EV",
+    "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a -0.8% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "speculative"
+    "confidence_tier": "high_confidence"
   },
   "banker_signal": {
-    "fixture": "Crystal Palace vs Ipswich",
-    "league": "Premier League (ENG)",
-    "kickoff": "Today, 14:00 UTC",
+    "fixture": "Sileks vs Bregalnica \u0160tip",
+    "league": "Prva Liga (MKD)",
+    "kickoff": "Today, 13:45 UTC",
     "market": "Over 2.5 Total Goals",
-    "odds": "1.80",
-    "implied_prob": "55.56%",
-    "fair_odds": "1.20",
-    "model_prob": "83.43%",
-    "ev": "+49.9% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +3.3% effect across 6 meetings.",
+    "odds": "1.67",
+    "implied_prob": "59.88%",
+    "fair_odds": "1.42",
+    "model_prob": "70.35%",
+    "ev": "+17.1% EV",
+    "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a -0.8% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "speculative"
+    "confidence_tier": "high_confidence"
   },
   "vip_signal_count": 0
 }
