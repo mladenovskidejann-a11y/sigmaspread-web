@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-14T07:01:44.517971Z",
+  "generated_at": "2026-09-15T07:02:21.665094Z",
   "stats": {
-    "avg_ev": "+38.8% EV",
+    "avg_ev": "+40.7% EV",
     "win_rate": "27.6%"
   },
   "free_signal": {
-    "fixture": "Shk\u00ebndija Hara\u00e7in\u00eb vs Skopje",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Today, 14:00 UTC",
+    "fixture": "Elche vs Real Madrid",
+    "league": "La Liga (ESP)",
+    "kickoff": "Today, 19:30 UTC",
     "market": "Under 2.5 Total Goals",
-    "odds": "1.72",
-    "implied_prob": "58.14%",
-    "fair_odds": "1.58",
-    "model_prob": "63.21%",
-    "ev": "+8.8% EV",
-    "insight": "No news analysis available (neutral, no impact on the model).",
+    "odds": "3.47",
+    "implied_prob": "28.82%",
+    "fair_odds": "2.36",
+    "model_prob": "42.36%",
+    "ev": "+46.9% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a -3.3% effect across 6 meetings. Home side on short rest (3 days). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "high_confidence"
+    "confidence_tier": "speculative"
   },
   "banker_signal": {
-    "fixture": "Shk\u00ebndija Hara\u00e7in\u00eb vs Skopje",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Today, 14:00 UTC",
-    "market": "Under 2.5 Total Goals",
-    "odds": "1.72",
-    "implied_prob": "58.14%",
-    "fair_odds": "1.58",
-    "model_prob": "63.21%",
-    "ev": "+8.8% EV",
-    "insight": "No news analysis available (neutral, no impact on the model).",
+    "fixture": "Rayo Vallecano vs Espanyol",
+    "league": "La Liga (ESP)",
+    "kickoff": "Today, 17:00 UTC",
+    "market": "Over 2.5 Total Goals",
+    "odds": "1.89",
+    "implied_prob": "52.91%",
+    "fair_odds": "1.52",
+    "model_prob": "65.99%",
+    "ev": "+25.0% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a -1.7% effect across 6 meetings. Home side on short rest (3 days). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "high_confidence"
+    "confidence_tier": "speculative"
   },
   "vip_signal_count": 0
 }
