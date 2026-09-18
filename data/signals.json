@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-18T20:53:00.941613Z",
+  "generated_at": "2026-09-18T20:58:09.092272Z",
   "stats": {
-    "avg_ev": "+39.7% EV",
+    "avg_ev": "+38.6% EV",
     "win_rate": "27.6%"
   },
   "free_signal": {
@@ -19,16 +19,16 @@
     "confidence_tier": "high_confidence"
   },
   "banker_signal": {
-    "fixture": "Bayern M\u00fcnchen vs Union Berlin",
-    "league": "Bundesliga (GER)",
-    "kickoff": "Today, 18:30 UTC",
-    "market": "Both Teams To Score - Yes",
-    "odds": "1.94",
-    "implied_prob": "51.55%",
-    "fair_odds": "1.89",
-    "model_prob": "52.95%",
-    "ev": "+3.0% EV",
-    "insight": "\u26a0\ufe0f Early-season sample with limited same-competition history so far -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +3.3% effect across 6 meetings. Home side on short rest (0 days). Away side on short rest (0 days).",
+    "fixture": "Monaco vs Lens",
+    "league": "Ligue 1 (FRA)",
+    "kickoff": "Today, 18:45 UTC",
+    "market": "Home Win",
+    "odds": "1.93",
+    "implied_prob": "51.81%",
+    "fair_odds": "1.87",
+    "model_prob": "53.44%",
+    "ev": "+3.1% EV",
+    "insight": "\u26a0\ufe0f Early-season sample with limited same-competition history so far -- treat with extra caution. No news analysis available (neutral, no impact on the model). Home side on short rest (0 days). Away side on short rest (0 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "speculative"
   },
