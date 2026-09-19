@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T11:01:40.288714Z",
+  "generated_at": "2026-09-19T11:09:50.279537Z",
   "stats": {
     "avg_ev": "+40.7% EV",
     "win_rate": "27.6%"
@@ -9,11 +9,11 @@
     "league": "La Liga (ESP)",
     "kickoff": "Today, 16:30 UTC",
     "market": "Away Win",
-    "odds": "4.31",
-    "implied_prob": "23.20%",
+    "odds": "4.32",
+    "implied_prob": "23.15%",
     "fair_odds": "3.61",
     "model_prob": "27.69%",
-    "ev": "+19.5% EV",
+    "ev": "+19.7% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
