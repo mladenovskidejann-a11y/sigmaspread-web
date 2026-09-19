@@ -1,33 +1,19 @@
 {
-  "generated_at": "2026-09-19T11:47:33.831004Z",
+  "generated_at": "2026-09-19T12:06:31.974891Z",
   "stats": {
-    "total_resolved": "30",
-    "wins": "8",
-    "losses": "21",
+    "total_resolved": "10",
+    "wins": "4",
+    "losses": "5",
     "voids": "1",
-    "win_rate": "27.6%",
-    "roi": "-25.7%"
+    "win_rate": "Building track record",
+    "roi": "Building track record"
   },
   "picks": [
-    {
-      "date": "2026-09-12",
-      "fixture": "1. FC K\u00f6ln vs Werder Bremen (Bundesliga (GER), 2026-09-12 16:30)",
-      "market": "Away Win",
-      "odds": "3.34",
-      "result": "LOSS"
-    },
     {
       "date": "2026-09-12",
       "fixture": "Crystal Palace vs Ipswich (Premier League (ENG), 2026-09-12 14:00)",
       "market": "Over 2.5 Total Goals",
       "odds": "1.8",
-      "result": "WIN"
-    },
-    {
-      "date": "2026-09-12",
-      "fixture": "FSV Mainz 05 vs Eintracht Frankfurt (Bundesliga (GER), 2026-09-12 13:30)",
-      "market": "Away Win",
-      "odds": "3.89",
       "result": "WIN"
     },
     {
@@ -38,13 +24,6 @@
       "result": "LOSS"
     },
     {
-      "date": "2026-09-11",
-      "fixture": "Tikve\u0161 vs Struga (Prva Liga (MKD), 2026-09-11 14:00)",
-      "market": "Home Win",
-      "odds": "2.58",
-      "result": "LOSS"
-    },
-    {
       "date": "2026-09-10",
       "fixture": "Slavia Praha vs Lens (UEFA Champions League, 2026-09-10 19:00)",
       "market": "Home Win",
@@ -52,52 +31,10 @@
       "result": "LOSS"
     },
     {
-      "date": "2026-09-10",
-      "fixture": "Manchester United vs Sabah FA (UEFA Champions League, 2026-09-10 19:00)",
-      "market": "Under 2.5 Total Goals",
-      "odds": "4.2",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-10",
-      "fixture": "Fenerbah\u00e7e vs AS Roma (UEFA Champions League, 2026-09-10 16:45)",
-      "market": "Home Win",
-      "odds": "3.38",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-09",
-      "fixture": "Sporting CP vs Galatasaray (UEFA Champions League, 2026-09-09 19:00)",
-      "market": "Away Win",
-      "odds": "4.42",
-      "result": "LOSS"
-    },
-    {
       "date": "2026-09-09",
       "fixture": "Napoli vs Arsenal (UEFA Champions League, 2026-09-09 19:00)",
       "market": "Over 2.5 Total Goals",
       "odds": "1.92",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-09",
-      "fixture": "VfB Stuttgart vs Viking (UEFA Champions League, 2026-09-09 16:45)",
-      "market": "Under 2.5 Total Goals",
-      "odds": "3.93",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-08",
-      "fixture": "Borussia Dortmund vs Villarreal (UEFA Champions League, 2026-09-08 19:00)",
-      "market": "Away Win",
-      "odds": "4.03",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-08",
-      "fixture": "Real Madrid vs Inter (UEFA Champions League, 2026-09-08 19:00)",
-      "market": "Under 2.5 Total Goals",
-      "odds": "2.81",
       "result": "LOSS"
     },
     {
@@ -109,30 +46,9 @@
     },
     {
       "date": "2026-09-07",
-      "fixture": "Vardar Skopje vs Aresimi (Prva Liga (MKD), 2026-09-07 17:00)",
-      "market": "Both Teams To Score - Yes",
-      "odds": "2.19",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-07",
-      "fixture": "Cagliari vs Lecce (Serie A (ITA), 2026-09-07 16:30)",
-      "market": "Away Win",
-      "odds": "4.15",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-07",
       "fixture": "Struga vs Sileks (Prva Liga (MKD), 2026-09-07 14:00)",
       "market": "Home Win",
       "odds": "2.05",
-      "result": "WIN"
-    },
-    {
-      "date": "2026-09-06",
-      "fixture": "Eintracht Frankfurt vs FC Augsburg (Bundesliga (GER), 2026-09-06 15:30)",
-      "market": "Away Win",
-      "odds": "3.44",
       "result": "WIN"
     },
     {
@@ -143,67 +59,11 @@
       "result": "WIN"
     },
     {
-      "date": "2026-09-06",
-      "fixture": "ADO Den Haag vs Fortuna Sittard (Eredivisie (NED), 2026-09-06 14:45)",
-      "market": "Away Win",
-      "odds": "3.09",
-      "result": "WIN"
-    },
-    {
-      "date": "2026-09-06",
-      "fixture": "Valencia vs Barcelona (La Liga (ESP), 2026-09-06 14:15)",
-      "market": "Under 2.5 Total Goals",
-      "odds": "3.07",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-06",
-      "fixture": "Everton vs Manchester United (Premier League (ENG), 2026-09-06 13:00)",
-      "market": "Home Win",
-      "odds": "3.68",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-05",
-      "fixture": "Villarreal vs Deportivo La Coruna (La Liga (ESP), 2026-09-05 19:00)",
-      "market": "Draw",
-      "odds": "4.46",
-      "result": "LOSS"
-    },
-    {
       "date": "2026-09-05",
       "fixture": "Utrecht vs GO Ahead Eagles (Eredivisie (NED), 2026-09-05 16:45)",
       "market": "Away Win",
       "odds": "3.08",
       "result": "VOID"
-    },
-    {
-      "date": "2026-09-05",
-      "fixture": "Borussia M\u00f6nchengladbach vs SV Elversberg (Bundesliga (GER), 2026-09-05 13:30)",
-      "market": "Away Win",
-      "odds": "3.81",
-      "result": "WIN"
-    },
-    {
-      "date": "2026-09-05",
-      "fixture": "SC Paderborn 07 vs SC Freiburg (Bundesliga (GER), 2026-09-05 13:30)",
-      "market": "Home Win",
-      "odds": "3.62",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-04",
-      "fixture": "Paris Saint Germain vs Monaco (Ligue 1 (FRA), 2026-09-04 19:05)",
-      "market": "Under 2.5 Total Goals",
-      "odds": "2.85",
-      "result": "LOSS"
-    },
-    {
-      "date": "2026-09-04",
-      "fixture": "Sparta Rotterdam vs PEC Zwolle (Eredivisie (NED), 2026-09-04 18:00)",
-      "market": "Under 2.5 Total Goals",
-      "odds": "2.63",
-      "result": "LOSS"
     },
     {
       "date": "2026-09-04",
