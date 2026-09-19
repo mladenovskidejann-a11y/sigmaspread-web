@@ -40,6 +40,7 @@
             <div class="flex items-center space-x-6 text-sm">
                 <a href="#methodology" class="text-slate-400 hover:text-white transition hidden sm:inline">Methodology</a>
                 <a href="#free-signal" class="text-slate-400 hover:text-white transition">Free Signal</a>
+                <a href="#track-record" class="text-slate-400 hover:text-white transition hidden sm:inline">Track Record</a>
                 <a href="https://t.me/SigmaSpread" target="_blank" class="bg-quantGreen text-black font-semibold px-4 py-2 rounded-md hover:bg-emerald-400 transition">Join Free Telegram</a>
             </div>
         </div>
@@ -130,6 +131,10 @@
                 <div>
                     <span class="text-xs text-quantGreen font-semibold tracking-wider uppercase block">● Live Model Output</span>
                     <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Today's Free +EV Signal</h2>
+                    <!-- Shown only when today's featured pick is the Banker (the day's
+                         safest, highest-confidence qualifying signal) rather than the
+                         highest-EV pick -- see hero_signal in the script below. -->
+                    <span id="hero-badge" class="hidden text-[11px] text-amber-400 font-mono mt-1">🏆 Banker Pick — safest of today's qualifying signals</span>
                 </div>
                 <div class="text-xs text-slate-400 bg-obsidian/80 px-3 py-1.5 rounded-full border border-slate-800 self-start sm:self-auto">
                     Updated Daily at 10:00 CET
@@ -142,36 +147,36 @@
                 <div class="bg-obsidian/60 border border-slate-800/80 rounded-xl p-4 mb-6 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                     <div>
                         <span class="text-xs text-slate-500 uppercase">Matchup</span>
-                        <p class="text-base sm:text-lg font-bold text-white" data-field="free_signal.fixture">Real Madrid vs Atalanta</p>
-                        <span class="text-xs text-cyberCyan"><span data-field="free_signal.league">UEFA Champions League</span> • <span data-field="free_signal.kickoff">Today, 21:00 CET</span></span>
+                        <p class="text-base sm:text-lg font-bold text-white" data-field="hero_signal.fixture">Real Madrid vs Atalanta</p>
+                        <span class="text-xs text-cyberCyan"><span data-field="hero_signal.league">UEFA Champions League</span> • <span data-field="hero_signal.kickoff">Today, 21:00 CET</span></span>
                     </div>
                     <div class="text-left sm:text-right">
                         <span class="text-xs text-slate-500 uppercase block">Selected Market</span>
-                        <span class="text-sm font-bold text-quantGreen" data-field="free_signal.market">Over 2.5 Total Goals</span>
+                        <span class="text-sm font-bold text-quantGreen" data-field="hero_signal.market">Over 2.5 Total Goals</span>
                     </div>
                 </div>
                 <!-- Metric Grid -->
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
                         <span class="text-xs text-slate-500 block">Market Price (Odds)</span>
-                        <span class="text-xl font-bold text-white" data-field="free_signal.odds">2.05</span>
-                        <span class="text-[10px] text-slate-500 block"><span data-field="free_signal.implied_prob">48.78%</span> Implied</span>
+                        <span class="text-xl font-bold text-white" data-field="hero_signal.odds">2.05</span>
+                        <span class="text-[10px] text-slate-500 block"><span data-field="hero_signal.implied_prob">48.78%</span> Implied</span>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
                         <span class="text-xs text-slate-500 block">Model Fair Price</span>
-                        <span class="text-xl font-bold text-white" data-field="free_signal.fair_odds">1.74</span>
-                        <span class="text-[10px] text-cyberCyan block"><span data-field="free_signal.model_prob">57.47%</span> Probability</span>
+                        <span class="text-xl font-bold text-white" data-field="hero_signal.fair_odds">1.74</span>
+                        <span class="text-[10px] text-cyberCyan block"><span data-field="hero_signal.model_prob">57.47%</span> Probability</span>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800 col-span-2 md:col-span-1">
                         <span class="text-xs text-slate-500 block">Quant Advantage</span>
-                        <span class="text-xl font-bold text-quantGreen" data-field="free_signal.ev">+9.4% EV</span>
+                        <span class="text-xl font-bold text-quantGreen" data-field="hero_signal.ev">+9.4% EV</span>
                         <span class="text-[10px] text-quantGreen block">High Value Detected</span>
                     </div>
                 </div>
                 <!-- Driver & Allocation -->
                 <div class="text-xs text-slate-400 space-y-2 mb-6 bg-obsidian/30 p-4 rounded-lg border border-slate-800/50">
-                    <p><span class="text-slate-200 font-semibold">Model Insight:</span> <span data-field="free_signal.insight">xG Variance anomaly detected in away transition metrics. Odds over-indexed recent squad rotation news.</span></p>
-                    <p><span class="text-slate-200 font-semibold">Recommended Stake:</span> <span data-field="free_signal.stake_note">1.0% Portfolio Allocation (1 Unit)</span></p>
+                    <p><span class="text-slate-200 font-semibold">Model Insight:</span> <span data-field="hero_signal.insight">xG Variance anomaly detected in away transition metrics. Odds over-indexed recent squad rotation news.</span></p>
+                    <p><span class="text-slate-200 font-semibold">Recommended Stake:</span> <span data-field="hero_signal.stake_note">1.0% Portfolio Allocation (1 Unit)</span></p>
                 </div>
             </div>
 
@@ -194,6 +199,74 @@
                 <a href="https://t.me/SigmaSpread" target="_blank" class="w-full sm:w-auto bg-quantGreen text-black text-xs font-bold px-5 py-2.5 rounded-lg hover:bg-emerald-400 transition text-center whitespace-nowrap">
                     Join Free Telegram →
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Record Section: every real settled pick (WIN/LOSS/VOID), newest
+         first, plus honest cumulative stats -- populated from data/history.json
+         (written by football_bot/history_writer.py right after settle_bets.py
+         resolves each day's results). No cherry-picking: everything that
+         qualified and got a pick gets logged here, win or lose. -->
+    <section id="track-record" class="py-12 px-6 max-w-4xl mx-auto">
+        <div class="bg-navyCard border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl font-mono">
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-800 pb-4 mb-6 gap-2">
+                <div>
+                    <span class="text-xs text-cyberCyan font-semibold tracking-wider uppercase block">● Real Results</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Track Record</h2>
+                </div>
+                <div class="text-xs text-slate-400 bg-obsidian/80 px-3 py-1.5 rounded-full border border-slate-800 self-start sm:self-auto">
+                    Every settled pick, no cherry-picking
+                </div>
+            </div>
+
+            <!-- Summary stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 text-center">
+                <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                    <span class="text-xs text-slate-500 block uppercase">Win Rate</span>
+                    <span class="text-xl font-bold text-white" data-field="history_stats.win_rate">--</span>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                    <span class="text-xs text-slate-500 block uppercase">ROI</span>
+                    <span class="text-xl font-bold text-quantGreen" data-field="history_stats.roi">--</span>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                    <span class="text-xs text-slate-500 block uppercase">Record</span>
+                    <span class="text-xl font-bold text-white"><span data-field="history_stats.wins">--</span>W-<span data-field="history_stats.losses">--</span>L</span>
+                </div>
+                <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                    <span class="text-xs text-slate-500 block uppercase">Resolved Picks</span>
+                    <span class="text-xl font-bold text-white" data-field="history_stats.total_resolved">--</span>
+                </div>
+            </div>
+            <p class="text-center text-[11px] text-slate-600 mb-6 -mt-2">
+                VOID (abandoned/cancelled matches, stake returned) is excluded from Win Rate and ROI.
+            </p>
+
+            <!-- Results table -->
+            <div id="history-table-wrap" class="overflow-x-auto hidden">
+                <table class="w-full text-xs sm:text-sm">
+                    <thead>
+                        <tr class="text-left text-slate-500 uppercase text-[10px] border-b border-slate-800">
+                            <th class="py-2 pr-3 font-medium">Date</th>
+                            <th class="py-2 pr-3 font-medium">Matchup</th>
+                            <th class="py-2 pr-3 font-medium">Pick</th>
+                            <th class="py-2 pr-3 font-medium">Odds</th>
+                            <th class="py-2 font-medium text-right">Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body"></tbody>
+                </table>
+            </div>
+
+            <!-- Empty state: shown until at least one pick has settled -->
+            <div id="history-empty" class="text-center py-8">
+                <p class="text-white font-semibold mb-2">Building the track record.</p>
+                <p class="text-slate-400 text-sm max-w-md mx-auto leading-relaxed">
+                    Real settled picks will appear here as they resolve. No history yet, and
+                    we're not going to fake one.
+                </p>
             </div>
         </div>
     </section>
@@ -262,8 +335,7 @@
             });
         }
 
-        function applyFreeSignalState(data) {
-            const hasSignal = data && data.free_signal;
+        function applyFreeSignalState(hasSignal) {
             document.getElementById('free-signal-content').classList.toggle('hidden', !hasSignal);
             document.getElementById('free-signal-empty').classList.toggle('hidden', !!hasSignal);
         }
@@ -276,13 +348,78 @@
             .then(res => (res.ok ? res.json() : null))
             .then(data => {
                 if (!data) return; // no file yet -- keep the demo markup as-is
-                applyFields(data);
-                applyFreeSignalState(data);
+
+                // Today's featured pick on the page ("hero_signal") prefers the
+                // Banker pick (the day's safest, highest-confidence qualifying
+                // signal) over the highest-EV free_signal, whenever a distinct
+                // banker exists -- it's the pick most likely to actually hit,
+                // a better front-door impression than a flashier EV number
+                // that might not land. Falls back to free_signal on days with
+                // no separate banker (they can be the exact same pick).
+                const heroSignal = data.banker_signal || data.free_signal || null;
+                applyFields(Object.assign({}, data, { hero_signal: heroSignal }));
+                applyFreeSignalState(!!heroSignal);
+                document.getElementById('hero-badge').classList.toggle('hidden', !data.banker_signal);
             })
             .catch(() => {
                 // Network/parse error -- keep the demo markup, fail silently
                 // (this is a public marketing page, never show a JS error to a visitor).
             });
+
+        // Track Record: every real settled pick (WIN/LOSS/VOID), newest
+        // first, plus honest cumulative stats -- data/history.json is
+        // written by football_bot/history_writer.py right after
+        // settle_bets.py resolves each day's results. Fails silently on
+        // error, same policy as the signal fetch above.
+        const RESULT_STYLES = {
+            WIN:  { label: 'WON',  cls: 'text-quantGreen bg-quantGreen/10 border-quantGreen/30' },
+            LOSS: { label: 'LOST', cls: 'text-rose-400 bg-rose-400/10 border-rose-400/30' },
+            VOID: { label: 'VOID', cls: 'text-slate-400 bg-slate-400/10 border-slate-500/30' },
+        };
+
+        function escapeHtml(str) {
+            return String(str).replace(/[&<>"']/g, c => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+            }[c]));
+        }
+
+        function renderHistory(history) {
+            const body = document.getElementById('history-table-body');
+            const wrap = document.getElementById('history-table-wrap');
+            const empty = document.getElementById('history-empty');
+            const picks = (history && history.picks) || [];
+
+            if (!picks.length) {
+                wrap.classList.add('hidden');
+                empty.classList.remove('hidden');
+                return;
+            }
+            wrap.classList.remove('hidden');
+            empty.classList.add('hidden');
+
+            body.innerHTML = picks.map(p => {
+                const style = RESULT_STYLES[p.result] || RESULT_STYLES.VOID;
+                return `
+                    <tr class="border-b border-slate-800/60">
+                        <td class="py-2.5 pr-3 text-slate-400 whitespace-nowrap">${escapeHtml(p.date)}</td>
+                        <td class="py-2.5 pr-3 text-slate-200">${escapeHtml(p.fixture)}</td>
+                        <td class="py-2.5 pr-3 text-slate-300">${escapeHtml(p.market)}</td>
+                        <td class="py-2.5 pr-3 text-slate-300">${escapeHtml(p.odds)}</td>
+                        <td class="py-2.5 text-right">
+                            <span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold border ${style.cls}">${style.label}</span>
+                        </td>
+                    </tr>`;
+            }).join('');
+        }
+
+        fetch('data/history.json', { cache: 'no-store' })
+            .then(res => (res.ok ? res.json() : null))
+            .then(history => {
+                if (!history) return; // no file yet -- empty state stays as-is
+                applyFields({ history_stats: history.stats });
+                renderHistory(history);
+            })
+            .catch(() => {});
     </script>
 
 </body>
