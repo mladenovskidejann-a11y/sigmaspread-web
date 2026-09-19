@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T11:09:50.279537Z",
+  "generated_at": "2026-09-19T11:16:15.115762Z",
   "stats": {
-    "avg_ev": "+40.7% EV",
+    "avg_ev": "+40.8% EV",
     "win_rate": "27.6%"
   },
   "free_signal": {
@@ -13,7 +13,7 @@
     "implied_prob": "23.15%",
     "fair_odds": "3.61",
     "model_prob": "27.69%",
-    "ev": "+19.7% EV",
+    "ev": "+19.8% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
