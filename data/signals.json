@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-18T20:58:09.092272Z",
+  "generated_at": "2026-09-19T07:02:40.809834Z",
   "stats": {
-    "avg_ev": "+38.6% EV",
+    "avg_ev": "+40.7% EV",
     "win_rate": "27.6%"
   },
   "free_signal": {
-    "fixture": "Sileks vs Tikve\u0161",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Today, 14:00 UTC",
+    "fixture": "Celta Vigo vs Racing Santander",
+    "league": "La Liga (ESP)",
+    "kickoff": "Today, 16:30 UTC",
     "market": "Away Win",
-    "odds": "3.28",
-    "implied_prob": "30.49%",
-    "fair_odds": "2.74",
-    "model_prob": "36.51%",
-    "ev": "+19.7% EV",
-    "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 6 meetings. Home side on short rest (0 days). Away side on short rest (0 days).",
+    "odds": "4.23",
+    "implied_prob": "23.64%",
+    "fair_odds": "3.61",
+    "model_prob": "27.69%",
+    "ev": "+17.2% EV",
+    "insight": "No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
   },
   "banker_signal": {
-    "fixture": "Monaco vs Lens",
-    "league": "Ligue 1 (FRA)",
-    "kickoff": "Today, 18:45 UTC",
-    "market": "Home Win",
-    "odds": "1.93",
-    "implied_prob": "51.81%",
-    "fair_odds": "1.87",
-    "model_prob": "53.44%",
-    "ev": "+3.1% EV",
-    "insight": "\u26a0\ufe0f Early-season sample with limited same-competition history so far -- treat with extra caution. No news analysis available (neutral, no impact on the model). Home side on short rest (0 days). Away side on short rest (0 days).",
+    "fixture": "Sparta Rotterdam vs Heerenveen",
+    "league": "Eredivisie (NED)",
+    "kickoff": "Today, 16:45 UTC",
+    "market": "Away Win",
+    "odds": "2.62",
+    "implied_prob": "38.17%",
+    "fair_odds": "2.29",
+    "model_prob": "43.70%",
+    "ev": "+14.5% EV",
+    "insight": "No news analysis available (neutral, no impact on the model).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "speculative"
+    "confidence_tier": "high_confidence"
   },
   "vip_signal_count": 0
 }
