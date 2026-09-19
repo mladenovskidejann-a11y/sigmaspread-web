@@ -131,10 +131,11 @@
                 <div>
                     <span class="text-xs text-quantGreen font-semibold tracking-wider uppercase block">● Live Model Output</span>
                     <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Today's Free +EV Signal</h2>
-                    <!-- Shown only when today's featured pick is the Banker (the day's
-                         safest, highest-confidence qualifying signal) rather than the
-                         highest-EV pick -- see hero_signal in the script below. -->
-                    <span id="hero-badge" class="hidden text-[11px] text-amber-400 font-mono mt-1">🏆 Banker Pick — safest of today's qualifying signals</span>
+                    <!-- Shown whenever a real pick is featured below -- this is the
+                         EXACT pick that also went out on the free Telegram channel
+                         today, never a stronger pick held back for VIP (see
+                         public_signal in the script below). -->
+                    <span id="hero-badge" class="hidden text-[11px] text-amber-400 font-mono mt-1">📡 Same pick sent to our free Telegram channel today</span>
                 </div>
                 <div class="text-xs text-slate-400 bg-obsidian/80 px-3 py-1.5 rounded-full border border-slate-800 self-start sm:self-auto">
                     Updated Daily at 10:00 CET
@@ -349,17 +350,20 @@
             .then(data => {
                 if (!data) return; // no file yet -- keep the demo markup as-is
 
-                // Today's featured pick on the page ("hero_signal") prefers the
-                // Banker pick (the day's safest, highest-confidence qualifying
-                // signal) over the highest-EV free_signal, whenever a distinct
-                // banker exists -- it's the pick most likely to actually hit,
-                // a better front-door impression than a flashier EV number
-                // that might not land. Falls back to free_signal on days with
-                // no separate banker (they can be the exact same pick).
-                const heroSignal = data.banker_signal || data.free_signal || null;
+                // Today's featured pick on the page ("hero_signal") is
+                // data.public_signal -- the EXACT pick that also went out
+                // on the free Telegram channel today (never the highest-EV
+                // pick and never the shortest-odds "banker" pick, both of
+                // which can be picks the free channel actually withheld
+                // for VIP -- see signals_writer.build_signals_data). On a
+                // day where the only qualifying pick was held back
+                // entirely for VIP, public_signal is null even though
+                // free_signal/banker_signal are not -- the site must never
+                // show, for free, something that's actually VIP-exclusive.
+                const heroSignal = data.public_signal || null;
                 applyFields(Object.assign({}, data, { hero_signal: heroSignal }));
                 applyFreeSignalState(!!heroSignal);
-                document.getElementById('hero-badge').classList.toggle('hidden', !data.banker_signal);
+                document.getElementById('hero-badge').classList.toggle('hidden', !heroSignal);
             })
             .catch(() => {
                 // Network/parse error -- keep the demo markup, fail silently
