@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:02:40.809834Z",
+  "generated_at": "2026-09-19T11:01:40.288714Z",
   "stats": {
     "avg_ev": "+40.7% EV",
     "win_rate": "27.6%"
@@ -9,28 +9,28 @@
     "league": "La Liga (ESP)",
     "kickoff": "Today, 16:30 UTC",
     "market": "Away Win",
-    "odds": "4.23",
-    "implied_prob": "23.64%",
+    "odds": "4.31",
+    "implied_prob": "23.20%",
     "fair_odds": "3.61",
     "model_prob": "27.69%",
-    "ev": "+17.2% EV",
+    "ev": "+19.5% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
   },
   "banker_signal": {
-    "fixture": "Sparta Rotterdam vs Heerenveen",
-    "league": "Eredivisie (NED)",
-    "kickoff": "Today, 16:45 UTC",
+    "fixture": "Eintracht Frankfurt vs SC Freiburg",
+    "league": "Bundesliga (GER)",
+    "kickoff": "Today, 13:30 UTC",
     "market": "Away Win",
-    "odds": "2.62",
-    "implied_prob": "38.17%",
-    "fair_odds": "2.29",
-    "model_prob": "43.70%",
-    "ev": "+14.5% EV",
-    "insight": "No news analysis available (neutral, no impact on the model).",
+    "odds": "2.60",
+    "implied_prob": "38.46%",
+    "fair_odds": "1.86",
+    "model_prob": "53.79%",
+    "ev": "+39.8% EV",
+    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +1.7% effect across 6 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "high_confidence"
+    "confidence_tier": "speculative"
   },
   "vip_signal_count": 0
 }
