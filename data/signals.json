@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T07:03:01.968535Z",
+  "generated_at": "2026-09-20T10:56:09.932684Z",
   "stats": {
     "avg_ev": "+41.3% EV",
     "win_rate": "26.5%"
@@ -9,11 +9,11 @@
     "league": "La Liga (ESP)",
     "kickoff": "Sun 20 Sep, 12:00 UTC",
     "market": "Home Win",
-    "odds": "2.02",
-    "implied_prob": "49.50%",
+    "odds": "1.98",
+    "implied_prob": "50.51%",
     "fair_odds": "1.76",
     "model_prob": "56.95%",
-    "ev": "+14.9% EV",
+    "ev": "+12.8% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +1.7% effect across 6 meetings. Home side on short rest (3 days). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
@@ -23,11 +23,11 @@
     "league": "La Liga (ESP)",
     "kickoff": "Sun 20 Sep, 12:00 UTC",
     "market": "Home Win",
-    "odds": "2.02",
-    "implied_prob": "49.50%",
+    "odds": "1.98",
+    "implied_prob": "50.51%",
     "fair_odds": "1.76",
     "model_prob": "56.95%",
-    "ev": "+14.9% EV",
+    "ev": "+12.8% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +1.7% effect across 6 meetings. Home side on short rest (3 days). Away side on short rest (3 days).",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
