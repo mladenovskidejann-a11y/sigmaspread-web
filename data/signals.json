@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T07:01:33.178574Z",
+  "generated_at": "2026-09-21T12:21:51.795538Z",
   "stats": {
-    "avg_ev": "+40.1% EV",
+    "avg_ev": "+40.0% EV",
     "win_rate": "26.5%"
   },
   "free_signal": {
@@ -9,11 +9,11 @@
     "league": "Prva Liga (MKD)",
     "kickoff": "Mon 21 Sep, 14:00 UTC",
     "market": "Both Teams To Score - No",
-    "odds": "1.78",
-    "implied_prob": "56.18%",
+    "odds": "1.74",
+    "implied_prob": "57.47%",
     "fair_odds": "1.52",
     "model_prob": "65.71%",
-    "ev": "+17.0% EV",
+    "ev": "+14.5% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 4 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
@@ -23,11 +23,11 @@
     "league": "Prva Liga (MKD)",
     "kickoff": "Mon 21 Sep, 14:00 UTC",
     "market": "Both Teams To Score - No",
-    "odds": "1.78",
-    "implied_prob": "56.18%",
+    "odds": "1.74",
+    "implied_prob": "57.47%",
     "fair_odds": "1.52",
     "model_prob": "65.71%",
-    "ev": "+17.0% EV",
+    "ev": "+14.5% EV",
     "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 4 meetings.",
     "stake_note": "2.0% Portfolio Allocation (1 Unit)",
     "confidence_tier": "high_confidence"
