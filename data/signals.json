@@ -1,37 +1,11 @@
 {
-  "generated_at": "2026-09-21T12:21:51.795538Z",
+  "generated_at": "2026-09-22T07:01:42.249132Z",
   "stats": {
-    "avg_ev": "+40.0% EV",
+    "avg_ev": "+40.8% EV",
     "win_rate": "26.5%"
   },
-  "free_signal": {
-    "fixture": "Struga vs Aresimi",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Mon 21 Sep, 14:00 UTC",
-    "market": "Both Teams To Score - No",
-    "odds": "1.74",
-    "implied_prob": "57.47%",
-    "fair_odds": "1.52",
-    "model_prob": "65.71%",
-    "ev": "+14.5% EV",
-    "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 4 meetings.",
-    "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "high_confidence"
-  },
-  "banker_signal": {
-    "fixture": "Struga vs Aresimi",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Mon 21 Sep, 14:00 UTC",
-    "market": "Both Teams To Score - No",
-    "odds": "1.74",
-    "implied_prob": "57.47%",
-    "fair_odds": "1.52",
-    "model_prob": "65.71%",
-    "ev": "+14.5% EV",
-    "insight": "No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 4 meetings.",
-    "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "high_confidence"
-  },
+  "free_signal": null,
+  "banker_signal": null,
   "public_signal": null,
   "vip_signal_count": 0
 }
