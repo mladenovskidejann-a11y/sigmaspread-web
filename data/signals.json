@@ -1,37 +1,11 @@
 {
-  "generated_at": "2026-09-23T11:04:04.316527Z",
+  "generated_at": "2026-09-24T07:02:08.633884Z",
   "stats": {
-    "avg_ev": "+40.6% EV",
+    "avg_ev": "+40.8% EV",
     "win_rate": "26.5%"
   },
-  "free_signal": {
-    "fixture": "Bregalnica \u0160tip vs Skopje",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Wed 23 Sep, 16:00 UTC",
-    "market": "Both Teams To Score - No",
-    "odds": "1.88",
-    "implied_prob": "53.19%",
-    "fair_odds": "1.39",
-    "model_prob": "72.00%",
-    "ev": "+35.7% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 6 meetings.",
-    "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "speculative"
-  },
-  "banker_signal": {
-    "fixture": "Bregalnica \u0160tip vs Skopje",
-    "league": "Prva Liga (MKD)",
-    "kickoff": "Wed 23 Sep, 16:00 UTC",
-    "market": "Both Teams To Score - No",
-    "odds": "1.88",
-    "implied_prob": "53.19%",
-    "fair_odds": "1.39",
-    "model_prob": "72.00%",
-    "ev": "+35.7% EV",
-    "insight": "\u26a0\ufe0f Flagged by our data-quality check (unusually large edge or a thin early-season sample) -- treat with extra caution. No news analysis available (neutral, no impact on the model). Head-to-head history shows a +2.5% effect across 6 meetings.",
-    "stake_note": "2.0% Portfolio Allocation (1 Unit)",
-    "confidence_tier": "speculative"
-  },
+  "free_signal": null,
+  "banker_signal": null,
   "public_signal": null,
   "vip_signal_count": 0
 }
